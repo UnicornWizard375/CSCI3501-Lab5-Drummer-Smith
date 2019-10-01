@@ -23,7 +23,7 @@ public class satisfactoryAlgorithm {
 
         //do not enter more than our max runs in the code or it might crash your computer.
         //if num of people is greater than 9, an error is also created, so this protects against that.
-        if(maxruns>10000 || numOfPeople > 4){
+        if(maxruns>10000 || numOfPeople > 9){
             System.out.println("\u001B[31m" + "Incorrect inputs could cause a long runtime, please lower them and try again. Aborting Program");
             System.exit(1);
         }
@@ -56,7 +56,7 @@ private static ArrayList<String> evolve(ArrayList<String> pairing, int points){
 
 
 
-        private static int numOfPeople = 9;
+        private static int numOfPeople = 5;
         private static int numOfCompanies = numOfPeople;
 
         private static String[][] people = new String[numOfCompanies][numOfCompanies];
